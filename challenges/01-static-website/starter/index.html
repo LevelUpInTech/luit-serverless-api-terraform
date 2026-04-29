@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I just deployed AWS infrastructure with Terraform</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      max-width: 640px;
+      margin: 80px auto;
+      padding: 0 24px;
+      line-height: 1.6;
+    }
+    h1 { color: #58a6ff; }
+    code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+    .badge { display: inline-block; background: #238636; color: white; padding: 4px 10px; border-radius: 999px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <span class="badge">LUIT Academy · Challenge 01 · Complete</span>
+  <h1>I shipped this with Terraform.</h1>
+  <p>
+    This page is hosted on AWS S3 and was deployed entirely as code. No clicking around the AWS console.
+    Versioned, encrypted at rest, locked down to the right level of public read access.
+  </p>
+  <p>
+    If you can read this on the public S3 website endpoint, that means I figured out how to:
+  </p>
+  <ul>
+    <li>Configure <code>aws_s3_bucket_public_access_block</code> to allow public bucket policies</li>
+    <li>Write a bucket policy granting <code>s3:GetObject</code> for the right principals</li>
+    <li>Upload an object to S3 with the correct <code>content_type</code></li>
+  </ul>
+  <p>
+    Onto Challenge 02. Let's get it.
+  </p>
+</body>
+</html>
