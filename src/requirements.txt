@@ -1,0 +1,9 @@
+# boto3 is bundled in the Lambda Python 3.12 runtime — pin it here only if you
+# want to use a newer version than the runtime ships with, then build a Lambda
+# layer:
+#
+#   pip install -r src/requirements.txt -t layer/python
+#   cd layer && zip -r ../lambda_layer.zip python
+#
+# For this starter project the runtime version is fine and we keep the deploy
+# package small.
