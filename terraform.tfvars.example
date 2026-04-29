@@ -1,0 +1,11 @@
+# Copy this to terraform.tfvars and edit for your environment.
+# terraform.tfvars is gitignored — never commit secrets.
+
+project_name = "luit-api"
+environment  = "dev"
+aws_region   = "us-east-1"
+
+# Optional overrides:
+# lambda_log_retention_days = 14
+# throttle_rate_limit       = 100
+# throttle_burst_limit      = 200
